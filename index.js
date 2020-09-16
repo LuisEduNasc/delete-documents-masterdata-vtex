@@ -33,6 +33,7 @@ const deleteDocuments = async (data, account, entity, key, token) => {
 }
 
 app.get('/deleteDocuments', (req, res) => {
+    console.log('Wait while delete...');
     const { account, entity, key, token } = req.headers;
 
     if(!account || !entity || !key || !token)
